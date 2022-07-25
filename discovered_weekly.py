@@ -35,6 +35,13 @@ def main():
     logger.info("Adding to all time playlist")
     add_to_all_time_playlist(client, dw_uris, config["ALL_DISCOVERED_PLAYLIST_ID"])
 
+    playlist_date, dw_uris = parse_this_week(
+        client, config["RELEASE_RADAR_PLAYLIST_ID"]
+    )
+    logger.info(f"Found this week's release radar playlist for {playlist_date}")
+    logger.info("Adding to all time playlist")
+    add_to_all_time_playlist(client, dw_uris, config["ALL_DISCOVERED_PLAYLIST_ID"])
+
     #logger.info("Adding to the weekly archive")
     #add_to_weekly_archive(client, config["USERNAME"], playlist_date, dw_uris)
 
