@@ -6,7 +6,7 @@ authors = ["Ethan Rosenthal <ethan@ethanrosenthal.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "3.10"
+python = "3.10.*"
 spotipy = "2.23.0"
 python-dotenv = "1.0.0"
 
