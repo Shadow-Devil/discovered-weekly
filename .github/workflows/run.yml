@@ -36,4 +36,4 @@ jobs:
         DISCOVER_WEEKLY_PLAYLIST_ID: ${{ secrets.DISCOVER_WEEKLY_PLAYLIST_ID }}
         ALL_DISCOVERED_PLAYLIST_ID: ${{ secrets.ALL_DISCOVERED_PLAYLIST_ID }}
       run: |
-        poetry run discovered_weekly.py
+        poetry run python discovered_weekly.py
